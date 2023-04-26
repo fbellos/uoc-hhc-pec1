@@ -1,0 +1,393 @@
+/*************************
+Fonts
+**************************/
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 400 700;
+  src: url("../fonts/Montserrat/Montserrat-VariableFont_wght.ttf") format('truetype');
+}
+
+/*************************
+Main styles
+**************************/
+
+* {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+.active {
+  font-weight: bold;
+  border-bottom: 3px #79BAAB dashed;
+}
+
+html {
+  height: 100%;
+}
+
+h1 {
+  font-weight: bold;
+  text-align: center;
+  font-size: 2rem;
+  max-width: 100%;
+  line-height: 0.9em;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-weight: bold;
+  text-align: left;
+  text-transform: uppercase;
+  font-size: 1.25rem;
+  padding-top: 1rem;
+  text-decoration: wavy;
+  width: 100%;
+  color: #b81207;
+
+}
+
+h3 {
+  font-weight: bold;
+  text-align: left;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  padding-top: 0.2rem;
+  color: #2A2A2A;
+}
+
+section hr {
+  border-color: #b81207;
+  border-width: 2px;
+  margin-top: 0px;
+}
+
+section p, section ul, section ol {
+  text-align: justify;
+}
+.container {
+  width: 80%;
+}
+
+section ul, section ol {
+  margin-top: 7px;
+  padding-left: 20px; 
+}
+
+section li {
+  margin-bottom: 5px; 
+}
+
+section a {
+  text-decoration: none;
+  color: #b81207;
+}
+
+section a:hover {
+  border: none;
+  color: #b81207;
+}
+
+/*************************
+Header
+**************************/
+header {
+  background-color: #b81207;
+  width: 100%;
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  position: fixed;
+}
+
+header nav {
+  position: relative;
+}
+
+.header-logo-link {
+  display: flex;
+  border: none;
+}
+
+.header-logo-link:hover {
+  border: none;
+}
+
+.header-logo {
+  width: 150px;
+  height: auto;
+  margin-bottom: 1em;
+}
+
+main {
+  padding-top: 120px;
+}
+
+img {
+  width: 100%;
+}
+
+body {
+  background-color: #FFFFFF;
+}
+
+/****************************
+Navbar menu
+*****************************/
+nav {
+  position: absolute;
+  top: calc(50% - 0.5em);
+  text-align: center;
+}
+
+nav ul li {
+  display: inline-block;
+  font-size: 1.1rem;
+  font-weight: 400;
+  padding-left: 10px;
+}
+
+nav ul li:first-child {
+  padding-left: 0;
+}
+
+nav ul li a {
+  color: inherit;
+  border: none;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  border: none;
+  color: #79BAAB
+}
+
+nav li.active a {
+  font-weight: bold;
+  color: var(--accent-color);
+}
+
+/*************************
+Footer
+**************************/
+footer {
+  height: auto;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: #b81207;
+  color: #FFFFFF;
+  font-size: 0.8rem;
+  text-align: center;
+  margin-top: 25px;
+}
+
+footer img {
+  width: 0.85em;
+}
+
+footer p {
+  font-size: inherit;
+  margin-bottom: 5px;
+}
+
+footer a {
+  color: inherit;
+  border: none;
+  text-decoration: none;
+}
+
+footer a:hover {
+  border: none;
+  color: #79BAAB;
+}
+
+footer ul {
+  list-style-type: none;
+}
+
+footer ul li {
+  display: inline-block;
+  padding-right: 5px;
+}
+
+footer ul li:last-child::after {
+  content: "";
+}
+
+hr {
+  margin-top:  15px;
+  margin-bottom: 15px;
+}
+
+.d-flex {
+  display:flex;
+}
+/* presentacion */
+.presentacion-img {
+  width: 150px;
+} 
+
+.presentacion-col1{
+  max-width: 40%;
+}
+
+.presentacion-col2{
+  max-width: 60%;
+}
+
+/*categorias*/
+
+.container-categorias {
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+
+.categorias-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  padding: 2%;
+}
+
+/* sumbenu */
+.submenu {
+  display: none;
+}
+
+/*detalle*/
+.box {
+  max-width: 70%;
+  padding: 3%;
+  background-color: #fff7e8;
+  text-align: center;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  border: 2px solid #b81207;
+}
+
+.detail p {
+  margin-bottom: 2%;
+}
+
+.button {
+  display: inline-block;
+  padding: 0.5em 1em;
+  text-align: center;
+  text-decoration: none;
+  color: #2A2A2A;
+  background-color: #b81207;
+  border-radius: 0.5em;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: all 0.2s ease-in-out;
+}
+
+.button:hover {
+  background-color: #b81207;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transform: translateY(-2px);
+  color: #2A2A2A;
+}
+
+.paginador {
+  text-align: right;
+}
+
+/* Cuando tengamos como mínimo 640px en el viewport, interesará que los elementos con estas clases se muestren uno al lado de otro y adapten su anchura */
+@media (min-width: 640px) {
+
+  main {
+      padding-top: 100px;
+  }
+  
+  header {
+      display: inline-block;
+  }
+
+  header .container {
+      position: relative;
+  }
+  
+  header nav {
+      position: absolute;
+  }
+
+  .header-logo-link {
+      display: inline-block;
+      width: 30%;
+  }
+
+ nav {
+      display: inline;
+      text-align: right;
+      width: 70%;
+  }
+
+  .container {
+      width: 80%;
+  }
+
+  .p1-footer {
+      display: flex;
+      flex: 1 auto;
+      flex-direction: column;
+  }
+
+  .col-l-footer {
+      text-align: left;
+      margin: 0;
+  }
+
+  .col-r-footer {
+      display: inline-flex;
+      text-align: right;
+      justify-content: right;
+  }
+
+  .col-r-footer ul {
+      padding-left: 15px;
+  }
+
+  h1 {
+      font-size: 2.5rem;
+      max-width: 40%;
+      padding: 0;
+  }
+
+  /*categorias*/
+  .submenu h2 {
+    text-align: left; 
+  }
+  .submenu li {
+    border: 1px transparent solid; 
+    display:inline-flex;
+    width:8em;
+  }
+  .submenu {
+      display: block;
+      background-color: #fff7e8;
+      padding: 2%;
+  }
+
+  .submenu input {
+      display: inline;
+      width: 95%;
+      border: 1px solid #79BAAB;
+      color: #79BAAB;
+      padding: 9px 4px 9px 40px;
+      background: #FFFFFF url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat 13px center;
+  }
+
+  .container-categorias {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-gap: 20px;
+  }
+
+  .categorias-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap: 20px;
+  }
+
+}
