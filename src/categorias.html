@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ibicio | VIGO</title>
+    <title>Categorias</title>
     <meta name="description"
         content="Sitio web de turismo de Vigo">
     <link rel="stylesheet" href="css/styles.css">
@@ -29,12 +29,12 @@
       <div class="container container-categorias ">
 
         <div class="submenu">
-            <h3>Categories</h3>
-            <ul>
-                <li><input type="checkbox">Monumentos</li>
-                <li><input type="checkbox">Muesos</li>
-                <li><input type="checkbox">Iglesias</li>
-            </ul>
+            <h3>Categorias</h3>
+            <div class="checkbox-column">
+                <label><input id="monumentos" type="checkbox" onclick="filtrar();">Monumentos y Esculturas</label>
+                <label><input id="museos" type="checkbox" onclick="filtrar();">Muesos y Fundaciones</label>
+                <label><input id="iglesias" type="checkbox" onclick="filtrar();">Iglesias y Capillas</label>
+            </div>
         </div>
 
         <div>
@@ -82,7 +82,7 @@
                 </div> 
             </section>
 
-            <section class="container mueseos">
+            <section class="container museos">
                 <h2>Museos</h2>
                 <hr>
                 <div class="categorias-grid">
