@@ -293,6 +293,21 @@ hr {
   text-align: right;
 }
 
+.carrusel {
+  width: 50%;
+  margin: 3%;
+}
+
+.container-carrusel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.arrow{
+  cursor: pointer
+}
+
 /* Cuando tengamos como mínimo 640px en el viewport, interesará que los elementos con estas clases se muestren uno al lado de otro y adapten su anchura */
 @media (min-width: 640px) {
 
